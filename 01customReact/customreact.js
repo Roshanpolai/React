@@ -1,0 +1,1 @@
+document.getElementById("heder").innerText = "Hello, Custom React!";
