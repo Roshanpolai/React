@@ -8,12 +8,12 @@ function App() {
   // method
   const addValue = () =>{
     setCounter(counter + 1)
-  }
+  } 
 
   const reduceValue = () => {
     if(counter > 0){
       setCounter(counter-1)
-    }
+    } 
   }
 
   return (
