@@ -1,0 +1,3 @@
+# Dont use <a> tag in react
+it refresh the Page 
+use: <Link> <navLink> (react router)

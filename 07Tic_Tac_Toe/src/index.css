@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* Using a modern system font stack for clean rendering */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Smooth transitions if you implement dark mode later */
+  background-color: #f7f9fa;
+  color: #1a1a1a;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+button {
+  font-family: inherit;
+  outline: none;
+}
+
+/* Focus states for users navigating with a keyboard (Accessibility) */
+button:focus-visible {
+  outline: 3px solid #4a90e2;
+  outline-offset: 2px;
+}

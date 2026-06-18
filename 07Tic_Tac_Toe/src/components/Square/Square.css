@@ -1,0 +1,26 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border: none; /* Borders are handled by the board gaps */
+  font-size: 36px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Interactive hover effect */
+.square:hover {
+  background-color: #eaeaea;
+}
+
+/* Optional: Active click effect */
+.square:active {
+  transform: scale(0.96);
+}

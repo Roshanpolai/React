@@ -1,0 +1,27 @@
+/* Center the entire board on the screen */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+/* Container for the 3 rows */
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* Space between rows */
+  background-color: #222; /* Creates the grid border color effect */
+  padding: 6px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Each row containing 3 squares */
+.board > div {
+  display: flex;
+  flex-direction: row;
+  gap: 6px; /* Space between squares horizontally */
+}
