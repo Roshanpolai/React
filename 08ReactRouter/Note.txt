@@ -1,0 +1,97 @@
+1. What is React Router?
+React Router is a library used for client-side routing in React applications.
+
+2. Why use React Router?
+No page reload
+Better user experience
+Dynamic routing
+Browser history support
+
+3. Difference between Link and anchor tag?
+Link	            Anchor
+No reload	        Reloads page
+SPA navigation	  Traditional navigation
+
+4. What is BrowserRouter?
+Provides routing functionality to the entire application.
+
+5. Difference between BrowserRouter and HashRouter?
+BrowserRouter
+/about
+
+HashRouter
+#/about
+
+HashRouter is used when server configuration is unavailable.
+
+6. What is Route?
+Maps URL paths to components.
+
+<Route path="/about" element={<About />} />
+
+7. What is Routes?
+A container that holds all Route components.
+<Routes>
+  <Route />
+</Routes>
+
+8. What is useNavigate?
+Used to navigate programmatically.
+navigate("/home");
+
+9. What is useParams?
+Used to get route parameters.
+const { id } = useParams();
+
+10. What is Dynamic Routing?
+/user/:id
+Where id changes dynamically.
+
+11. What is Outlet?
+Used to render child routes.
+import { Outlet } from "react-router-dom";
+
+function Dashboard() {
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+    </>
+  );
+}
+
+12. What is a Single Page Application (SPA)?
+A web app where content updates without full page reloads.
+React Router helps create SPAs.
+
+
+# Link
+Used to navigate to another page.
+Changes the URL without reloading the page.
+<Link to="/about">About</Link>
+
+# Route
+Used to render a component for a specific URL.
+<Route path="/about" element={<About />} />
+
+# Memory Trick
+Link  → Go to URL
+Route → Show Component
+
+# Flow
+User Clicks Link
+     ↓
+URL Changes
+     ↓
+Route Matches URL
+     ↓
+Component Renders
+
+# Example
+<Link to="/about">About</Link>
+<Route path="/about" element={<About />} />
+
+Clicking Link sends you to `/about`.
+then,Route sees `/about` and displays the About component.
+
+-> Link is used for navigation, while Route maps a URL path to a React component and renders it.
