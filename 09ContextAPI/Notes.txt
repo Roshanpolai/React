@@ -1,0 +1,37 @@
+Problem:
+Props → Props → Props → Props
+(Prop Drilling)
+
+Solution:
+Context API
+Context API is a React feature that allows components to share data 
+globally without passing props through every level of the component tree.
+
+Steps:
+1. createContext()
+2. Provider value={data}
+3. useContext()
+
+Use Cases:
+✓ Login User
+✓ Theme
+✓ Language
+✓ Cart
+✓ Global Data
+
+
+# Interview Questions
+1. What is Context API?
+A React feature used to share data globally without prop drilling.
+
+2. What problem does Context API solve?
+Prop Drilling.
+
+3. What are the steps?
+createContext()
+Provider
+useContext()
+
+4. Can Context API replace Redux?
+For small and medium apps, often yes.
+For very large apps with complex state management, Redux may still be preferred.
